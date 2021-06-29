@@ -1,0 +1,40 @@
+p {
+  color: #5fa4bb;
+  font-size: 20px;
+}
+table {
+  text-align: center;
+  width: 450px;
+  align-content: center;
+}
+table th,
+table td {
+  padding: 5px 5px;
+  background-color: #5fa4bb;
+}
+iframe {
+  position: relative;
+  left: 450px;
+  top: 20px;
+}
+.box {
+  background-color: #5fa4bb;
+  margin: 20px auto;
+  height: 300px;
+  width: 300px;
+  position: sticky;
+  top: 100px;
+}
+.item1 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+.item2 {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+}

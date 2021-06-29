@@ -1,0 +1,50 @@
+.button {
+  padding: 5px 10px;
+  background-color: brown;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: green;
+  color: white;
+}
+body {
+  background-color: aliceblue;
+}
+nav ul {
+  text-decoration: none;
+  list-style: none;
+}
+li {
+  float: right;
+  padding: 10px 10px;
+}
+li a {
+  display: block;
+}
+li a:hover {
+  color: green;
+}
+section {
+  background-color: aqua;
+  font-size: 20px;
+}
+section .home {
+  display: block;
+  padding: 10px 5px;
+}
+section .aboutUs {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: yellow;
+}
+section .aboutUs p {
+  font-size: 15;
+  color: #ff0000;
+}
+.style {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: yellow;
+}

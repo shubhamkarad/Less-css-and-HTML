@@ -1,0 +1,43 @@
+@bgColor: #5fa4bb;
+@fontSize:12px;
+p{
+    color: @bgColor;
+    font-size: @fontSize + 8;
+}
+table{
+    text-align: center;
+    width: 450px;
+    align-content: center;
+        th,td{
+            padding: 5px 5px;
+            background-color: @bgColor;
+        }
+}
+iframe{
+    position: relative;
+    left: 450px;
+    top: 20px;
+}
+// There are 4 main position properties which are: Absolute, Relative, Fixed, Sticky.
+// Main use of this position properties is to align the items or change the position of elements.
+.box{
+    background-color: @bgColor;
+    margin: 20px auto;
+    height: 300px;
+    width: 300px;
+    position:sticky;
+    top: 100px;
+}
+.item1{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.item2{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
