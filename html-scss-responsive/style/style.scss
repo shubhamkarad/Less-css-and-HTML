@@ -1,0 +1,160 @@
+@import "navbar";
+@import "colors";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana';
+}
+
+//Hero section
+
+.hero{
+    background-color: $light;
+    
+    &__container{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        height: 90vh;
+        z-index: 1;
+        width: 100%;
+        max-width:1200px;
+        padding-right:24px;
+        padding-left: 24px;
+    
+        @include tablet{
+            grid-template-columns: 1fr;
+            height: 100%;
+        }
+    &--left{
+        width: 100%;
+        line-height: 1.5;
+    @include tablet{
+        padding: 5rem 0;
+    }
+    @include mobile{
+        line-height: 1.5;
+    }
+        h1{
+            font-size: $fontSize + 1rem;
+            color: $lime;
+            
+            @include mobile{
+                font-size: 1.5rem;
+            }
+        }
+        h2{
+            font-size: $fontSize + 1rem;
+            color: $dark;
+            
+            @include mobile{
+                font-size: $fontSize;
+            }
+        }
+        p{
+            font-size:$fontSize;
+            color: $dark;
+            margin-top:1rem;
+            font-weight: 400;
+            
+            @include mobile{
+                font-size: 1.5rem;
+            }
+        }
+    }
+     &--btn{
+            font-size: 1rem;
+            background-color: $lime;
+            padding: 14px 32px;
+            font-style: inherit;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            margin:15px 0;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+            
+            a{
+                position: relative;
+                z-index: 2;
+                color: $light;
+                text-decoration: none;
+                outline: none;
+            }
+        &:after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: $orangeRed;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+        &:hover::after{
+            width: 100%;
+        }
+        }
+        &--right{
+        text-align: center;
+    }
+    &--img{
+        height: 100%;
+        width:100%;
+    }
+    }
+    
+
+}
+
+//Life section
+.life{
+    background-color: $light;
+
+    &__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    
+    h1{
+        color: $dark;
+    }
+    h3{
+        margin-top: 20px;
+        color: $dark;
+        font-size: 1.5rem;
+    }
+    &--left{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1/3;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: $lime;
+            a{
+                font-size: 1.5rem;
+            }
+            p{
+                display: grid;
+                grid-column: 2/3;
+                font-size: 1rem;
+            }
+    }
+    &--img{
+        width: 350px;
+        height: 200px;
+    }
+    }
+   
+}

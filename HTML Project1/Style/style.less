@@ -1,0 +1,103 @@
+//-----------Variable declaration---------
+@fontSize:20px;
+@fontFamily:Tahoma;
+@headingFont:'Montserrat',sans-serif;
+.bd-grid
+{
+     max-width: 1024px;
+     display: grid;
+     grid-template-columns: 100%;
+     grid-column-gap: 2rem;
+     width: calc(100% -2rem);
+     margin-left: auto;
+     margin-right: auto;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__menu{
+    width: 100%;
+    border-radius: 2px;
+    background-color:black;
+}
+ul{
+    float: right;
+    display: flex;
+  list-style-type: none;  
+}
+li{
+    text-align: center;
+    color:white;  
+    padding: 5px 25px;
+}
+.baseOne{
+    padding: 10px 0px;
+    display: block;
+}
+
+#para1{
+    font-size:@fontSize + 5px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+p:nth-child(2){
+    font-size:@fontSize - 5px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-family:@fontFamily;
+}
+p:nth-child(3){
+    display: inline;
+    width: 100%;
+    font-size: @fontSize - 4px;
+
+    a{
+        color: red;
+        text-decoration: none;
+    }
+}
+p:nth-child(4){
+    margin-left: 300px;
+    width: 30px;
+    height: 2px;
+    background: black;
+}
+#line2{
+    margin-left: 300px;
+    width: 30px;
+    height: 2px;
+    background: black;
+}
+.section1{
+    max-width: 1024px;
+     display: grid;
+     grid-template-columns: 63%;
+     grid-column-gap: 2rem;
+     width: calc(100% -2rem);
+     margin-left: auto;
+     margin-right: auto;
+    #aLine{
+        text-align: center;
+        font-size: @fontSize + 5;
+        font-style: italic;
+        color: red;
+        text-decoration: none;
+}
+}
+.blogs{
+    h3{
+        font-size: @fontSize + 15px;
+        letter-spacing: 2px;
+        font-family:@headingFont;
+    }
+    h2{
+        font-family: @headingFont;
+    }
+    p{
+        color: rgba(44, 44, 44, 0.877);
+        font-family:  Geneva,sans-serif;
+        letter-spacing: 1px;
+    }
+}   
+

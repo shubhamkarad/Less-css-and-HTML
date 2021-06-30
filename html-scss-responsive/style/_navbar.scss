@@ -1,0 +1,82 @@
+@import "colors";
+@import "media-queries";
+$fontSize:2rem;
+
+//This function is useful to use in any property.
+%align-center{
+    display: flex;
+    align-items: center;
+}
+//-----------Navbar---------
+.navbar{
+    background-color: $light;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) /2);
+    z-index: 10;
+    position: relative;
+    
+    //Use & if the name of the class is same eg. name og parent class is navbar and child class name is 
+    // navbar__logo so we can use &__logo in the same property.
+
+        &__logo{
+            color: $dark;
+            text-decoration: none;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-size: $fontSize;
+            margin-left: 25px;
+            @extend %align-center;
+        }
+        &__bars{
+            opacity: 0;
+
+            @include tablet{
+                color: $dark;
+                opacity: 1;
+                position: absolute;
+                top:22px;
+                right:20px;
+                font-size: $fontSize;
+            }
+        }
+        &__menu{
+            @extend %align-center;
+            text-align: center;
+            list-style: none;
+            margin-right:24px;
+
+            @include tablet{
+                display: none;
+            }
+
+        &--link{
+            color: $dark;
+            @extend %align-center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 1rem;
+
+            &:hover{
+                color: $lime;
+                transition: all 0.3s ease;
+            }
+        }
+        #button{
+            padding: 10px 15px;
+            background-color: $lime;
+            border-radius: 8px;
+            justify-content: center;
+            font-style: inherit;
+            outline: none;
+            margin-left: 16px;
+            color: $light;
+
+            &:hover{
+                background-color: $orangeRed;
+                transition: all 0.3s ease;
+            }
+        }
+        }
+}
